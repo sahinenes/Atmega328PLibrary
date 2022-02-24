@@ -9,7 +9,8 @@
 #ifndef ATMEGA328_H_
 #define ATMEGA328_H_
 
-#define F_CPU 16000000
+
+#define F_CPU 8000000
 
 #include <avr/sfr_defs.h>
 #include <stdio.h>

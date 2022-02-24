@@ -16,7 +16,7 @@
 #define SCL_CLK 100000L
 #define BITRATE(TWSR)	((F_CPU/SCL_CLK)-16)/(2*pow(4,(TWSR&((1<<TWPS0)|(1<<TWPS1)))))
 
-void I2C_Init(void);
+void I2C_init(void);
 uint8_t I2C_start(uint8_t slave_adress);
 uint8_t I2C_start_wait(uint8_t slave_adress);
 uint8_t I2C_repeated_start(uint8_t slave_adress);

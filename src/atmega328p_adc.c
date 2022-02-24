@@ -21,6 +21,6 @@ uint16_t ADC_read(uint8_t input)
 	 ADCSRA |= (1<<ADSC);
 	 // wait until ADC conversion is complete
 	 while( ADCSRA & (1<<ADSC) );
-	 return ADC;
+	 return (uint16_t)ADC;
 	
 }
